@@ -1,16 +1,14 @@
-import { alpha, Box, Grid, Typography, useTheme } from "@mui/material";
+import { alpha, Box, Typography, useTheme } from "@mui/material";
 
 export function Footer() {
   const theme = useTheme();
   return (
     <Box
       sx={{
-        position: "absolute",
-        bottom: 0,
-        left: 0,
-
         width: "100%",
         backgroundColor: alpha(theme.palette.secondary.main, 0.6),
+        position: "sticky",
+        top: "100vh",
       }}
     >
       <Typography

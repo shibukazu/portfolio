@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Avatar, Box, Grid, Typography } from "@mui/material";
 
 export function Header() {
   return (
@@ -66,12 +66,15 @@ export function Header() {
             pr: 2,
           }}
         >
-          <img
+          <Avatar
             src="/profile.jpg"
-            alt="profile"
-            height="80"
-            style={{
-              borderRadius: "50%",
+            sx={{
+              height: {
+                xs: "80px",
+              },
+              width: {
+                xs: "80px",
+              },
             }}
           />
         </Grid>
